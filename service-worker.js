@@ -1,4 +1,4 @@
-let cacheName = "OpenGithubPWA";// 👈 any unique name
+let cacheName = "coagguide";// 👈 any unique name
 
 let filesToCache = [
   "/CoagGuide/", // 👈 your repository name , both slash are important
