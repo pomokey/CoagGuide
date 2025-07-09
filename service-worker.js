@@ -12,7 +12,7 @@ let filesToCache = [
   // add your assets here 
   // ❗️❕donot add config.json here ❗️❕
   "js/data.js",
-  "js/search",
+  "js/search.js",
   "css/style.css"
 ];
 
