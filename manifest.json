@@ -1,12 +1,12 @@
 {
-  "name": "Open PWA",
-  "short_name": "Open PWA",
+  "name": "CoagGuide",
+  "short_name": "CoagGuide",
   "start_url": "./", 
   "scope": ".",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#fff",
-  "theme_color": "#640700",
+  "theme_color": "#4287f5",
   "newBranch":"true",
   "icons": [
     {
