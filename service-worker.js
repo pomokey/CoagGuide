@@ -8,9 +8,12 @@ let filesToCache = [
   "js/settings.js",
   "css/main.css",
   "assets/icons/icon.png",
-  "manifest.json"
+  "manifest.json",
   // add your assets here 
   // ❗️❕donot add config.json here ❗️❕
+  "js/data.js",
+  "js/search",
+  "css/style.css"
 ];
 
 self.addEventListener("install", function (event) {
