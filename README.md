@@ -4,7 +4,7 @@
 # [CoagGuide](https://pomokey.github.io/CoagGuide/)
 
 #### How to use the app:
-- simply search for the drug the patuent is on, brand name or generic, and see how long it should be held prior to placing an epidural or performing a spinal 
+- simply search for the drug the patient is on, brand name or generic, and see how long it should be held prior to placing an epidural or performing a spinal 
 
 These guideline are based on the ASRA coag guidelines
 
