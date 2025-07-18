@@ -1,16 +1,11 @@
- # 🔸OpenPWA🔸
- ##### OpenPWA is a boilerplate for deploying pwa using Github Pages.
+ # CoagGuide
+ ##### CoagGuide is a simple app that contains searchable guidelines for performing neuraxial procedures on patients taking anticoagulation.
 
+# [CoagGuide](https://pomokey.github.io/CoagGuide/)
 
-# [Open PWA](http://pranoysarkar.github.io/OpenPWA/)
+#### How to use the app:
+- simply search for the drug the patuent is on, brand name or generic, and see how long it should be held prior to placing an epidural or performing a spinal 
 
-#### How to build your own?
-- Fork this project on github
-- Enable Github pages option in settings
-- Done!! Get the link in the GitHub pages section
+These guideline are based on the ASRA coag guidelines
 
-#### ❗️❕ This includes cache busting mechnism, as pwa serves from cache so changes will not be refected untill you change the version in config.json
-
-#### ❗️❕ On changing repository name you need to update the reposity name in 👉 "service-worker.js", line no 4
-
-This is a PWA, everything is made using webtechnologies. 🍄 
+Please let me know if you find any errors
