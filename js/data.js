@@ -2,14 +2,14 @@ const drugData = [
   {
     "name": "Heparin",
     "subName": "IV infusion",
-    "holdBefore": "4-6 hours (verify normal aPTT)",
-    "catheterInPlace": "Not recommended",
+    "holdBefore": "4-6 hours AND verify normal aPTT",
+    "catheterInPlace": "Boluses for vascular surgery:<br>Increased risk, but may be given, wait 1 hour after placement.  Not mandatory to cancel if traumatic placement.<br>Hold 4-6 hours and verify normal pTT prior to removal<br><br>Continuous infusion:<br>Not recommended",
     "resumeAfter": "1 hour"
   },
   {
     "name": "Heparin",
     "dose": "5000 units SQ q8h or q12h",
-    "holdBefore": "4-6 hours (or verify normal aPTT)",
+    "holdBefore": "4-6 hours OR verify normal aPTT",
     "catheterInPlace": "May be given, wait 4-6 hours after last dose prior to removal",
     "resumeAfter": "Immediately",
     "subName": "SubQ - Prophylactic"
@@ -17,7 +17,7 @@ const drugData = [
   {
     "name": "Heparin",
     "dose": "7500 - 10000 units q12h",
-    "holdBefore": "12 hours (verify normal aPTT)",
+    "holdBefore": "12 hours AND verify normal aPTT",
     "catheterInPlace": "Not recommended",
     "resumeAfter": "1 hour",
     "subName": "SubQ - Intermediate Dose"
@@ -25,7 +25,7 @@ const drugData = [
   {
     "name": "Heparin",
     "dose": "> 10000 units q12h",
-    "holdBefore": "24 hours (verify normal aPTT)",
+    "holdBefore": "24 hours AND verify normal aPTT",
     "catheterInPlace": "Not recommended",
     "resumeAfter": "1 hour",
     "subName": "SubQ - High Dose"
@@ -245,4 +245,5 @@ const drugData = [
     "catheterInPlace": "CONTRAINDICATED",
     "resumeAfter": "6 hours"
   }
+
 ];
