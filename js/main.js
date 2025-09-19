@@ -25,7 +25,7 @@ function vaildateCacheIfOnline(){
             let installedVersion = Settings.getVersion()
             if ( installedVersion== 0) {
                 Settings.setVersion(config.version)
-                document.querySelector('#version').innerHTML= `version ${config.version}`;
+                document.querySelector('#version').innerHTML= `${config.version}`;
                 return resolve();
             }
             else if (installedVersion != config.version) {
