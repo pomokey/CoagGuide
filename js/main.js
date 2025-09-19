@@ -41,7 +41,7 @@ function vaildateCacheIfOnline(){
             }else{
                 // already updated
                 console.log('Cache Updated')
-                document.querySelector('#version').innerHTML= `version ${installedVersion}`;
+                document.querySelector('#version').innerHTML= `${installedVersion}`;
                 return resolve();
             }
         }).catch(err=>{
