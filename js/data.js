@@ -69,20 +69,20 @@ const drugData = [
   {
     "name": "Apixaban",
     "brand": "Eliquis",
-    "dose": "2.5 mg BID<br>Indications:<br>DVT prophylaxis",
-    "holdBefore": "36 hours or<br>aXa level ≤ 0.1 IU/mL or<br>apixaban level < 30 ng/mL",
+    "dose": "5 - 10 mg BID<br>Indications:<br>a-fib and therapeutic for DVT/PE<br>may be 2.5 mg if small, elderly, or CKD",
+    "holdBefore": "3 days or<br>aXa level ≤ 0.1 IU/mL or<br>apixaban level < 30 ng/mL",
     "catheterInPlace": "Not recommended. If unanticipated administration given, follow above recommendations prior to removal.",
     "resumeAfter": "24 hours",
-    "subName": "low dose"
+    "subName": "high dose"
   },
   {
     "name": "Apixaban",
     "brand": "Eliquis",
-    "dose": "5 - 10 mg BID<br>Indications:<br>a-fib and therapeutic for DVT/PE<br>may be 2.5 mg if small, elderly, or CKD",
-    "holdBefore": "3 days or<br>aXa level ≤ 0.1 IU/mL or<br>apixaban level < 30 ng/mL",
+    "dose": "2.5 mg BID<br>Indications:<br>DVT prophylaxis",
+    "holdBefore": "36 hours or<br>aXa level ≤ 0.1 IU/mL or<br>apixaban level < 30 ng/mL",
     "catheterInPlace": "Not recommended. If unanticipated administration given, follow above recommendations prior to removal.",
     "resumeAfter": "6 hours",
-    "subName": "high dose"
+    "subName": "low dose"
   },
   {
     "name": "Rivaroxaban",
@@ -247,3 +247,4 @@ const drugData = [
   }
 
 ];
+
