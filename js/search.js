@@ -33,6 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (searchQuery) {
     searchInput.value = searchQuery;
   }
+}
     
 
     searchInput.addEventListener('input', function() {
@@ -77,4 +78,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }).join('');
 
     }
+
 
