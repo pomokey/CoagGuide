@@ -1,9 +1,34 @@
     const searchInput = document.getElementById('searchInput');
     const resultsDiv = document.getElementById('results');
 
+    // A simple debounce function
+    function debounce(func, delay) {
+      let timeoutId;
+      return function(...args) {
+        clearTimeout(timeoutId);
+        timeoutId = setTimeout(() => {
+          func.apply(this, args);
+        }, delay);
+      };
+    }
+
+    function updateUrlWithSearchQuery(query) {
+          // Construct the new URL with the search query
+          const newUrl = new URL(window.location.href);
+          if (query) {
+            newUrl.searchParams.set('q', query);
+          } else {
+            newUrl.searchParams.delete('q');
+          }
+        history.pushState({}, '', newUrl);
+        //console.log(`URL updated: ${newUrl}`);
+    }
+
+    const debouncedUpdateUrl = debounce(updateUrlWithSearchQuery, 3000); // 3-second delay
 
     searchInput.addEventListener('input', function() {
         const query = this.value.toLowerCase().trim();
+        debouncedUpdateUrl(event.target.value);
         if (query.length === 0) {
             resultsDiv.innerHTML = '<p class="not-found">Enter a drug name (e.g., Lovenox, Eliquis, Plavix) to see the guidelines.</p>';
             return;
@@ -41,4 +66,5 @@
                 </div>
             `;
         }).join('');
+
     }
