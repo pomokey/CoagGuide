@@ -26,6 +26,15 @@
 
     const debouncedUpdateUrl = debounce(updateUrlWithSearchQuery, 3000); // 3-second delay
 
+
+document.addEventListener('DOMContentLoaded', () => {
+  const urlParams = new URLSearchParams(window.location.search);
+  const searchQuery = urlParams.get('q');
+  if (searchQuery) {
+    searchInput.value = searchQuery;
+  }
+    
+
     searchInput.addEventListener('input', function() {
         const query = this.value.toLowerCase().trim();
         debouncedUpdateUrl(event.target.value);
@@ -68,3 +77,4 @@
         }).join('');
 
     }
+
